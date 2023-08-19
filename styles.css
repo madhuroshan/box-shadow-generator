@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: aqua;
+}
+
+.container {
+  background-color: white;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+  padding: 80px;
+}
+
+#preview {
+  background-color: #311b92;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 2rem;
+  box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.range-wrapper,
+.range-wrapper input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.code-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+#copy-btn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: #311b92;
+  color: white;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  flex: 1;
+  padding: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .settings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result {
+    padding: 20px;
+  }
+}
